@@ -22,7 +22,7 @@ A Bash-based toolkit to analyze network performance: latency, packet loss, and r
 
 ```bash
 cd scripts
-./net_check.sh google.com
+./net_check.sh 8.8.8.8
 ```
 
 ## 🧪 Example
