@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$1" == "--help" ]; then
+  echo "Usage: ./net_check.sh <target>"
+  exit 0
+fi
+
 set -e
 
 source ../config/config.sh
