@@ -13,7 +13,7 @@ fi
 TARGET=${1:-$DEFAULT_TARGET}
 DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
-echo "Diagnostics started for  $TARGET at $DATE" >> $LOG_FILE
+echo "Diagnostics started for xxx  $TARGET at $DATE" >> $LOG_FILE
 
 ./latency.sh $TARGET >> $LOG_FILE
 ./packet_loss.sh $TARGET >> $LOG_FILE
