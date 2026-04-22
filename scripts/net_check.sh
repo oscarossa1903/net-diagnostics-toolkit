@@ -1,16 +1,17 @@
 #!/bin/bash
 
+set -e
+
+source ../config/config.sh
+
 if [ "$1" == "--help" ]; then
   echo "Usage: ./net_check.sh <target>"
   exit 0
 fi
 
-set -e
-
-source ../config/config.sh
 
 TARGET=${1:-$DEFAULT_TARGET}
-DATE=$(date)
+DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
 echo "checking $TARGET at $DATE" >> $LOG_FILE
 
