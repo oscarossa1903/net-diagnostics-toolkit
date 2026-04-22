@@ -15,6 +15,7 @@ DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
 echo "Diagnostics started for xxx  $TARGET at $DATE" >> $LOG_FILE
 
+
 ./latency.sh $TARGET >> $LOG_FILE
 ./packet_loss.sh $TARGET >> $LOG_FILE
 traceroute $TARGET >> $LOG_FILE
